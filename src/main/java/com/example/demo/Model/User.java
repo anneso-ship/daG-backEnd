@@ -3,7 +3,7 @@ package com.example.demo.Model;
 import javax.persistence.*;
 
 @Entity
-@Table(name="Users")
+@Table(name="users")
 public class User {
 
     @Id

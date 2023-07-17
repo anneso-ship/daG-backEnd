@@ -25,6 +25,9 @@ public class AgentController {
         agentService.createAgent(agent);
     }
 
+    @GetMapping(value="getRequest")
+    public List<Agent> getRequestRegistration(){return agentService.getRequest();}
+
     //requete connexion d'un agent
     @PostMapping(value = "authenticate")
     public Agent authenticate(@RequestBody Agent agent) {
